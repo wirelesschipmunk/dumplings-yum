@@ -1,5 +1,5 @@
 body {
-  font-family: "Pencerio", cursive;
+  /* font-family: "Pencerio", cursive; */
   font-family: "Telma", cursive;
   margin: 0;
   background-image: url(background-img.png);
@@ -21,12 +21,14 @@ p {
 
 button {
   font: inherit;
-  background: linear-gradient(45deg, rgb(240, 189, 22), rgb(222, 144, 0));
+  background: linear-gradient(45deg, rgb(255, 63, 63), rgb(222, 0, 0));
   border-radius: 8px;
   margin-bottom: 1em;
   border-style: solid;
+  border-color: black;
   box-shadow: 1px 1px 15px;
-  width: 5em;
+  width: 5.8em;
+  /* height: 3em; */
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -41,12 +43,25 @@ button:active {
   opacity: 0.5;
 }
 
+#toTop {
+  font-size: 2em;
+  position: fixed;
+  bottom: 0;
+  right: 0.3px;
+  width: 3em;
+}
+
 #name {
   font-family: "Pencerio", cursive;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 15px black;
+  /* background: linear-gradient(15deg, rgb(92, 63, 255), rgb(222, 0, 0)); */
   font-weight: bold;
   font-size: 65px;
   color: rgb(255, 235, 219);
   text-shadow: 1px 1px 3px;
+  padding: 0.3em 0.4em;
+  border-radius: 20px;
 }
 
 #home-page {
@@ -74,7 +89,6 @@ button:active {
 #top-bar {
   text-align: center;
   font-size: 25px;
-  background-color: rgb(255, 255, 255);
   top: 0;
   width: 100%;
   padding: 0.1em;
@@ -86,16 +100,27 @@ button:active {
   z-index: 5;
 }
 
-#dark-mode-toggle {
+/* #dark-mode-toggle {
   position: absolute;
   top: 7px;
   right: 7px;
-}
+} */
 
 #welcome {
   margin-top: 4em;
+  margin-bottom: 0.5em;
   text-align: center;
   width: 550px;
+}
+
+#menuText {
+  font-size: 22px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 9px;
+  padding: 3em 3em;
+  background-image: url(menu-bg.png);
+  width: 40%;
+  opacity: 0.8;
 }
 
 .img {
@@ -115,4 +140,8 @@ button:active {
 .img:active {
   width: 480px;
   transform: rotate(2deg);
+}
+
+.hidden {
+  display: none;
 }
